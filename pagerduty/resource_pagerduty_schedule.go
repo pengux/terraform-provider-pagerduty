@@ -41,7 +41,6 @@ func resourcePagerDutySchedule() *schema.Resource {
 			"layer": {
 				Type:     schema.TypeList,
 				Required: true,
-				ForceNew: true,
 				Elem: &schema.Resource{
 					Schema: map[string]*schema.Schema{
 						"id": {
